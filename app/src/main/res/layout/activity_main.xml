@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="*"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/calculator"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:hint="@string/result"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="match_parent"/>
+
+
+
+    <TableRow android:layout_weight="1">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:id="@+id/off"
+            android:text="@string/off"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ac"
+            android:text="@string/ac"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/na"
+            android:text="@string/na"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go"
+            android:text="@string/go"
+            android:layout_height="match_parent"/>
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number1"
+            android:text="@string/_1"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number2"
+            android:text="@string/_2"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number3"
+            android:text="@string/_3"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ma"
+            android:text="@string/ma"
+            android:layout_height="match_parent"/>
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number4"
+            android:text="@string/_4"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number5"
+            android:text="@string/_5"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number6"
+            android:text="@string/_6"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pl"
+            android:text="@string/pl"
+            android:layout_height="match_parent"/>
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number7"
+            android:text="@string/_7"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number8"
+            android:text="@string/_8"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number9"
+            android:text="@string/_9"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eq"
+            android:text="@string/eq"
+            android:layout_height="match_parent"/>
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_span="4"
+            android:layout_height="match_parent"
+            android:id="@+id/number0"
+            android:text="@string/_0"/>
+    </TableRow>
+</TableLayout>
